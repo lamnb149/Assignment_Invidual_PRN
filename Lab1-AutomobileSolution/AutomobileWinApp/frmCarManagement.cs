@@ -26,12 +26,13 @@ namespace AutomobileWinApp
         private void frmCarManagement_Load(object sender, EventArgs e)
         {
             btnDelete.Enabled = false;
-            dgvCarList.CellDoubleClick += dgvCarList_CellDoubleClick;
+            //dgvCarList.CellDoubleClick += dgvCarList_CellDoubleClick;
         } // end frmCarManagement_Load
 
         private void dgvCarList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            frmCarDetails frmCarDetails = new frmCarDetails {
+            frmCarDetails frmCarDetails = new frmCarDetails
+            {
                 Text = "Update car",
                 InsertOrUpdate = true,
                 CarInfo = GetCarObject(),

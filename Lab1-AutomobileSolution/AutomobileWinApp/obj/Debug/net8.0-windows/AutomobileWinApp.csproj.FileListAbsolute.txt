@@ -40,3 +40,4 @@ D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Lab1-AutomobileSolution\AutomobileWinApp\ob
 D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Lab1-AutomobileSolution\AutomobileWinApp\obj\Debug\net8.0-windows\AutomobileWinApp.pdb
 D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Lab1-AutomobileSolution\AutomobileWinApp\obj\Debug\net8.0-windows\AutomobileWinApp.genruntimeconfig.cache
 D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Lab1-AutomobileSolution\AutomobileWinApp\obj\Debug\net8.0-windows\ref\AutomobileWinApp.dll
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Lab1-AutomobileSolution\AutomobileWinApp\obj\Debug\net8.0-windows\AutomobileWinApp.sourcelink.json
