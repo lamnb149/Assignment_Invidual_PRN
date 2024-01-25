@@ -1,0 +1,16 @@
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\bin\Debug\net8.0\BusinessObject.dll
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\bin\Debug\net8.0\BusinessObject.pdb
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CopyComplete
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\FPT_Semesters\FPT_KI_5\PRN211\Lab\Ass01Solution\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
