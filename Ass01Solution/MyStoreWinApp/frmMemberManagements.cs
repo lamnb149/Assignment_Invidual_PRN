@@ -25,6 +25,7 @@ namespace MyStoreWinApp
             InitializeComponent();
         }
 
+        //-----LOAD FORM----------------------------------------------------
         private void frmMemberManagements_Load(object sender, EventArgs e)
         {
 
@@ -48,12 +49,12 @@ namespace MyStoreWinApp
                 btnSearchName.Visible = false;
                 cboCity.Visible = false;
                 cboCountry.Visible = false;
-                lbFilter.Visible   = false;
+                lbFilter.Visible = false;
             }
 
             dvgMemberList.CellDoubleClick += DvgMemberList_CellDoubleClick;
-        }
-
+        } // End 
+        //----------------------------------------------------------------------------------
         private void DvgMemberList_CellDoubleClick(object? sender, DataGridViewCellEventArgs e)
         {
             frmMemberDetails frmMemberDetails = new frmMemberDetails()
@@ -68,8 +69,8 @@ namespace MyStoreWinApp
                 LoadMemberList();
                 source.Position = source.Count - 1;
             }
-        }
-
+        } // End 
+        //----------------------------------------------------------------------------------
         private void btnLoad_Click(object sender, EventArgs e)
         {
             LoadMemberList();
@@ -82,8 +83,8 @@ namespace MyStoreWinApp
                 cboCity.Enabled = true;
                 cboCountry.Enabled = true;
             }
-        }
-
+        } // End
+        //----------------------------------------------------------------------------------
         private void ClearText()
         {
             txtMemberId.Text = string.Empty;
@@ -92,8 +93,8 @@ namespace MyStoreWinApp
             txtEmail.Text = string.Empty;
             txtCountry.Text = string.Empty;
             txtCity.Text = string.Empty;
-        }
-
+        } // End
+        //----Get Member Object-----------------------------------------------------------------
         private Member GetMemberObject()
         {
             Member member = null;
@@ -114,9 +115,8 @@ namespace MyStoreWinApp
                 MessageBox.Show(ex.Message, "Get Member");
             }
             return member;
-        }
-
-
+        } // end
+        //----------------------------------------------------------------------------------
         private void LoadMemberList()
         {
             IEnumerable<Member> members = memberRepository.GetMembers();
@@ -158,6 +158,7 @@ namespace MyStoreWinApp
                     {
                         btnDelete.Enabled = true;
                     }
+                    source.Position = source.Count - 1;
                 }
             }
             catch (Exception ex)
@@ -287,11 +288,12 @@ namespace MyStoreWinApp
 
         private void SearchByName()
         {
+            txtSearchID.Text = string.Empty;
             string searchName = txtSearchName.Text.Trim();
+            List<Member> members = source.Cast<Member>().Where(emp => emp.MemberName.Contains(searchName)).ToList();
             if (searchName != null)
             {
-                List<Member> members = source.Cast<Member>().Where(emp => emp.MemberName.Contains(searchName)).ToList();
-                dvgMemberList.DataSource = members;
+                source.DataSource = members;
             }
             else
             {
@@ -312,19 +314,21 @@ namespace MyStoreWinApp
         private void cboCountry_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtSearchID.Text = string.Empty;
-            FilterCountry();
+            List<Member> _discardedList; 
+            FilterCountry(out _discardedList);
         }
 
-        private void FilterCountry()
+        private void FilterCountry(out List<Member> list)
         {
             string filter = cboCountry.Text;
+            List<Member> filterCountry = memberRepository.GetMembers().Cast<Member>().Where(emp => emp.Country.Equals(filter)).ToList();
+            list = filterCountry;
             if (filter.Equals("All"))
             {
                 LoadMemberList();
             }
             else
             {
-                List<Member> filterCountry = memberRepository.GetMembers().Where(emp => emp.Country.Equals(filter)).ToList();
                 source.DataSource = filterCountry;
             }
         }
@@ -337,6 +341,8 @@ namespace MyStoreWinApp
 
         private void FilterCity()
         {
+            List<Member> filteredCountry;
+            FilterCountry(out filteredCountry);
             string selectedCity = cboCity.Text;
             if (selectedCity.Equals("All"))
             {
@@ -345,8 +351,8 @@ namespace MyStoreWinApp
             }
             else
             {
-                List<Member> filterCity = source.Cast<Member>().Where(emp => emp.City.Equals(selectedCity)).ToList();
-                dvgMemberList.DataSource = filterCity;
+                List<Member> filterCity = filteredCountry.Cast<Member>().Where(emp => emp.City.Equals(selectedCity)).ToList();
+                source.DataSource = filterCity;
             }
         }
 
@@ -368,7 +374,5 @@ namespace MyStoreWinApp
                 }
             }
         }
-
-        
     }
 }

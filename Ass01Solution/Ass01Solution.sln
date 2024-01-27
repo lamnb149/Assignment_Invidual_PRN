@@ -12,11 +12,19 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation Layer", "1.Presentation Layer", "{2186B81A-3C04-4344-A1D6-C95CA6477CC5}"
 	ProjectSection(SolutionItems) = preProject
 		appsettings.json = appsettings.json
+		MyStoreWinApp\frmMemberManagements.cs = MyStoreWinApp\frmMemberManagements.cs
+		MyStoreWinApp\frmMemberManagements.Designer.cs = MyStoreWinApp\frmMemberManagements.Designer.cs
+		MyStoreWinApp\frmMemberManagements.resx = MyStoreWinApp\frmMemberManagements.resx
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Business Layer", "2.Business Layer", "{DE1AA1BD-0804-4973-AE64-3E760BA1C0DE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Data Layer", "3.Data Layer", "{079B6F2A-2805-4F31-863E-C0C51509576A}"
+	ProjectSection(SolutionItems) = preProject
+		MyStoreWinApp\frmMemberManagements.resx = MyStoreWinApp\frmMemberManagements.resx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{F11CC812-3DF2-4ED8-8B29-5265637C482B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

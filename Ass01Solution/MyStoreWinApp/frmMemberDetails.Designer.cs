@@ -46,106 +46,120 @@
             // 
             // txtCountry
             // 
-            txtCountry.Location = new Point(150, 237);
+            txtCountry.Location = new Point(214, 395);
+            txtCountry.Margin = new Padding(4, 5, 4, 5);
             txtCountry.Name = "txtCountry";
-            txtCountry.Size = new Size(242, 23);
+            txtCountry.Size = new Size(344, 31);
             txtCountry.TabIndex = 18;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(150, 111);
+            txtPassword.Location = new Point(214, 185);
+            txtPassword.Margin = new Padding(4, 5, 4, 5);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(242, 23);
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(344, 31);
             txtPassword.TabIndex = 17;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(42, 245);
+            label6.Location = new Point(60, 408);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(50, 15);
+            label6.Size = new Size(75, 25);
             label6.TabIndex = 7;
             label6.Text = "Country";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(42, 80);
+            label3.Location = new Point(60, 133);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(36, 15);
+            label3.Size = new Size(54, 25);
             label3.TabIndex = 8;
             label3.Text = "Email";
             // 
             // txtCity
             // 
-            txtCity.Location = new Point(150, 198);
+            txtCity.Location = new Point(214, 330);
+            txtCity.Margin = new Padding(4, 5, 4, 5);
             txtCity.Name = "txtCity";
-            txtCity.Size = new Size(242, 23);
+            txtCity.Size = new Size(344, 31);
             txtCity.TabIndex = 16;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(150, 72);
+            txtEmail.Location = new Point(214, 120);
+            txtEmail.Margin = new Padding(4, 5, 4, 5);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(242, 23);
+            txtEmail.Size = new Size(344, 31);
             txtEmail.TabIndex = 15;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(42, 206);
+            label5.Location = new Point(60, 343);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(28, 15);
+            label5.Size = new Size(42, 25);
             label5.TabIndex = 9;
             label5.Text = "City";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(42, 164);
+            label2.Location = new Point(60, 273);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(84, 15);
+            label2.Size = new Size(126, 25);
             label2.TabIndex = 10;
             label2.Text = "MemberName";
             // 
             // txtName
             // 
-            txtName.Location = new Point(150, 156);
+            txtName.Location = new Point(214, 260);
+            txtName.Margin = new Padding(4, 5, 4, 5);
             txtName.Name = "txtName";
-            txtName.Size = new Size(242, 23);
+            txtName.Size = new Size(344, 31);
             txtName.TabIndex = 14;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(42, 119);
+            label4.Location = new Point(60, 198);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(57, 15);
+            label4.Size = new Size(87, 25);
             label4.TabIndex = 11;
             label4.Text = "Password";
             // 
             // txtMemberId
             // 
-            txtMemberId.Location = new Point(150, 30);
+            txtMemberId.Location = new Point(214, 50);
+            txtMemberId.Margin = new Padding(4, 5, 4, 5);
             txtMemberId.Name = "txtMemberId";
-            txtMemberId.Size = new Size(242, 23);
+            txtMemberId.Size = new Size(344, 31);
             txtMemberId.TabIndex = 13;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(42, 38);
+            label1.Location = new Point(60, 63);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(63, 15);
+            label1.Size = new Size(97, 25);
             label1.TabIndex = 12;
             label1.Text = "MemberID";
             // 
             // btnSave
             // 
             btnSave.DialogResult = DialogResult.OK;
-            btnSave.Location = new Point(150, 279);
+            btnSave.Location = new Point(214, 465);
+            btnSave.Margin = new Padding(4, 5, 4, 5);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(75, 23);
+            btnSave.Size = new Size(107, 38);
             btnSave.TabIndex = 19;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
@@ -154,9 +168,10 @@
             // btnCancel
             // 
             btnCancel.DialogResult = DialogResult.Cancel;
-            btnCancel.Location = new Point(317, 279);
+            btnCancel.Location = new Point(453, 465);
+            btnCancel.Margin = new Padding(4, 5, 4, 5);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(75, 23);
+            btnCancel.Size = new Size(107, 38);
             btnCancel.TabIndex = 20;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
@@ -164,9 +179,9 @@
             // 
             // frmMemberDetails
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(427, 316);
+            ClientSize = new Size(610, 527);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
             Controls.Add(txtCountry);
@@ -181,6 +196,7 @@
             Controls.Add(label4);
             Controls.Add(txtMemberId);
             Controls.Add(label1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "frmMemberDetails";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmMemberDetails";

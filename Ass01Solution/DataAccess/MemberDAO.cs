@@ -51,6 +51,42 @@ namespace DataAccess
                 Password = "A123",
                 City = "Tokyo",
                 Country = "Japan"
+            },
+            new Member()
+            {
+                MemberID = 6,
+                MemberName = "Trần Đức Minh",
+                Email = "minhtd@yahoo.com",
+                Password = "A123",
+                City = "Hà Nội",
+                Country = "Việt Nam"
+            },
+            new Member()
+            {
+                MemberID = 7,
+                MemberName = "Phạm Thị Ngọc Lan",
+                Email = "lanptn@outlook.com",
+                Password = "A123",
+                City = "Hà Nội",
+                Country = "Việt Nam"
+            },
+            new Member()
+            {
+                MemberID = 8,
+                MemberName = "Nguyễn Hoàng Nam",
+                Email = "namnh@hotmail.com",
+                Password = "A123",
+                City = "Tokyo",
+                Country = "Japan"
+            },
+            new Member()
+            {
+                MemberID = 9,
+                MemberName = "Lê Thị Thu Trang",
+                Email = "trangltt@gmail.com",
+                Password = "A123",
+                City = "Đà Nẵng",
+                Country = "Việt Nam"
             }
         };
         //--------------------------------------------

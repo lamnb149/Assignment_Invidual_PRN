@@ -14,10 +14,15 @@ namespace MyStoreWinApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            IConfiguration _configuration;
+            _configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetParent(AppContext.BaseDirectory).FullName)
+                .AddJsonFile("appsettings.json")
+                .Build();
             string _username = txtUsername.Text.Trim();
             string _password = txtPassword.Text;
-            string _usernameConf = "admin";
-            string _passwordConf = "admin";
+            string _usernameConf = _configuration.GetSection("AdminAccount:Email").Value;
+            string _passwordConf = _configuration.GetSection("AdminAccount:Password").Value;
             if (_username.Equals(_usernameConf))
             {
                 if (_password.Equals(_passwordConf))
