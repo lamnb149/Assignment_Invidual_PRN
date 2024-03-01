@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutomobileWinApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f832ae9f61547fa07cd12bc2a53ce7f00641ae6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutomobileWinApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutomobileWinApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
